@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaVision</title>
+    <!-- Link para Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Link para FontAwesome (opcional para ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Caminho atualizado da imagem -->
+            <img src="logo.png" alt="Logo InstaVision" class="logo">
+            <h1>InstaVision</h1>
+            <p>Projete suas receitas com estilo!</p>
+        </header>
+        
+        <main>
+            <form id="instaForm">
+                <div class="input-group">
+                    <label for="budget_diario">Orçamento Diário (R$)</label>
+                    <input type="number" id="budget_diario" placeholder="Ex: 10, 26, 52..." required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="preco_produto">Valor do Produto (R$)</label>
+                    <input type="number" id="preco_produto" placeholder="Ex: 350" required>
+                </div>
+                
+                <button type="submit" class="calculate-btn">Calcular Receita</button>
+            </form>
+
+            <div id="resultados" class="resultados">
+                <!-- Resultados detalhados serão exibidos aqui -->
+            </div>
+
+            <div id="medias" class="medias">
+                <!-- Resultados médios serão exibidos aqui em quadrados separados -->
+            </div>
+
+            <!-- Botão Reiniciar -->
+            <button id="reiniciarBtn" class="reiniciar-btn hidden">Reiniciar</button>
+        </main>
+        
+        <footer>
+            <p>Desenvolvido por <strong>InstaVision Team</strong></p>
+        </footer>
+    </div>
+
+    <!-- Pop-up para nova consulta -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <p class="popup-text">Deseja fazer uma nova consulta?</p>
+            <button id="novaConsultaBtn" class="popup-btn">Sim</button>
+            <button id="fecharPopupBtn" class="popup-btn">Não</button>
+        </div>
+    </div>
+</body>
+</html>

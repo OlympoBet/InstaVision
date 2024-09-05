@@ -1,0 +1,169 @@
+/* Estilo para o body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo para o container principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para a logo */
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o cabeçalho */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o parágrafo de introdução */
+header p {
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    color: #f0f0f0;
+}
+
+/* Estilo para o formulário */
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/* Estilo para os grupos de entrada */
+.input-group {
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+
+/* Estilo para o botão de calcular e o botão reiniciar */
+.calculate-btn, .reiniciar-btn {
+    background-color: #ffdc80;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.calculate-btn:hover, .reiniciar-btn:hover {
+    background-color: #ffc048;
+}
+
+/* Estilo para a seção de resultados */
+.resultados, .medias {
+    margin-top: 2em;
+    padding: 15px;
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-radius: 10px;
+    text-align: left;
+    color: #fff;
+}
+
+/* Estilo para cada item de resultado */
+.result-item, .media-item {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Estilo para os números maiores */
+.result-item strong, .media-item strong {
+    font-size: 1.5em;
+}
+
+/* Estilo para o pop-up */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.popup-text {
+    font-size: 1.5em;
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.popup-btn {
+    background-color: #ffdc80;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.popup-btn:hover {
+    background-color: #ffc048;
+}
+
+/* Oculta o pop-up e o botão Reiniciar inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Estilo para o rodapé */
+footer {
+    margin-top: 2em;
+    font-size: 0.8em;
+    color: #f0f0f0;
+}
